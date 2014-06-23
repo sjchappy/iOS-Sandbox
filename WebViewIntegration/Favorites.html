@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Favorites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+                <script src="jquery-1.11.1.min.js"></script>
+                <script src="jquery.mobile-1.4.2.min.js"></script>
+                
+                <script>
+                    $(document).on('pageinit', function(event){
+                                   $("#navigationDiv").load("NavigationBlock.html", function () {
+                                                            $(this).trigger('create');
+                                                            });
+                                   });
+                    </script>
+    
+    
+    </head>
+    <body>
+        
+        <div data-role="page">
+            
+            <div data-role="header">
+                <h1>Favorites</h1>
+                <a href="javascript:history.back();" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back  ui-btn-icon-notext"></a>
+            </div><!-- /header -->
+            
+            <div data-role="content">
+                <div id="divFavoritesList"></div>
+            </div>
+            
+        <div id="navigationDiv"></div>
+            
+            
+        </div><!-- /page -->
+        
+        
+        
+        
+    </body>
+</html>

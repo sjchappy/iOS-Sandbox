@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Preferences</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+                <script src="jquery-1.11.1.min.js"></script>
+                <script src="jquery.mobile-1.4.2.min.js"></script>
+    
+                
+    </head>
+    <body>
+        
+        <div data-role="page">
+            
+            <div data-role="header">
+                <h1>Preferences</h1>
+                <a href="javascript:history.back();" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back  ui-btn-icon-notext"></a>
+                <a href="action:favorite:Preferences.html" id="iconFavorite" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-heart ui-btn-icon-notext">Favorite</a>
+            </div>
+            
+
+            
+            <div data-role="fieldcontain">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="txtName" value="" width="50px" />
+            </div>
+            
+            <div data-role="fieldcontain">
+                <label for="name">Company:</label>
+                <input type="text" name="company" id="txtCompany" value="" width="50px" />
+            </div>
+       
+                
+                 <a data-role="button" href="action:SavePreferences" data-mini="true" data-ajax="false">Save!</a>
+                 <a data-role="button" href="action:CancelPreferences" data-mini="true" data-ajax="false">Cancel!</a>
+        
+            
+     
+            
+            
+        </div><!-- /page -->
+        
+        
+        
+        
+    </body>
+</html>
